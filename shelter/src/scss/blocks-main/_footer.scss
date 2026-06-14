@@ -1,0 +1,151 @@
+.footer {
+  background: 
+    url("../../public/main/noise_transparent@2x.png"),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 6%, #1A1A1C 55%), #211F20;
+}
+
+.footer__wrapper {
+  padding: 40px 40px 59px 40px;
+
+  .footer__container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.footer__info {
+  display: flex;
+  gap: 160px;
+  padding-top: 16px;
+  padding: 56px 0px 60px 0px;
+  background: url("../../public/main/footer-puppy.png") no-repeat right bottom;
+  transition: padding-top 0.3s ease-in;
+  min-width: 708px;
+
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    gap: 40px;
+    min-width: 278px;
+  }
+
+  .footer__place {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    min-width: 305px;
+    // gap: 30px;
+  }
+
+  .footer__title {
+    font-family: $font-accent;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $base-color;
+  }
+
+  .footer__title-margin {
+    max-width: 270px;
+  }
+}
+
+.footer__contacts-item,
+.footer__place-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+
+  .footer__place-svg {
+    align-self: center;
+  }
+}
+
+.footer__contacts-mail,
+.footer__contacts-number,
+.footer__place-boston,
+.footer__place-london {
+  font-family: $font-accent;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-accent;
+}
+
+@media (hover: hover) {
+  .footer__contacts-item:hover .footer__contacts-mail {
+    color: $base-color;
+    transition: color 0.3s ease-in;
+  }
+  .footer__contacts-item:hover .svg-fill {
+    fill: $base-color;
+    // fill: red;
+    transition: fill 0.3s ease-in;
+  }
+
+  .footer__contacts-item:not(hover) .footer__contacts-mail {
+    color: $color-accent;
+    transition: color 0.3s ease-in;
+  }
+  .footer__contacts-item:not(hover) .svg-fill {
+    fill: $color-accent;
+    transition: fill 0.3s ease-in;
+  }
+
+  // Number hover
+  .footer__contacts-item:hover .footer__contacts-number {
+    color: $base-color;
+    transition: color 0.3s ease-in;
+  }
+  .footer__contacts-item:hover .svg-fill {
+    fill: $base-color;
+    transition: fill 0.3s ease-in;
+  }
+
+  .footer__contacts-item:not(hover) .footer__contacts-number {
+    color: $color-accent; // $color-primary-light
+    transition: color 0.3s ease-in;
+  }
+
+  // Boston on a map
+  .footer__place-item:hover .footer__place-boston {
+    color: $base-color;
+    transition: color 0.3s ease-in;
+  }
+  .footer__place-item:hover .svg-fill {
+    fill: $base-color;
+    transition: fill 0.3s ease-in;
+  }
+
+  .footer__place-item:not(hover) .footer__place-boston {
+    color: $color-accent; // $color-primary-light
+    transition: color 0.3s ease-in;
+  }
+  .footer__place-item:not(hover) .svg-fill {
+    fill: $color-accent; // $color-primary-light
+    transition: fill 0.3s ease-in;
+  }
+
+  // London on a map 
+  .footer__place-item:hover .footer__place-london {
+    color: $base-color;
+    transition: color 0.3s ease-in;
+  }
+  .footer__place-item:hover .svg-fill {
+    fill: $base-color;
+    transition: fill 0.3s ease-in;
+  }
+
+  .footer__place-item:not(hover) .footer__place-london {
+    color: $color-accent; // $color-primary-light
+    transition: color 0.3s ease-in;
+  }
+}

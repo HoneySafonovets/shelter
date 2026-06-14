@@ -17,3 +17,53 @@ body {
   padding: 0px 40px;
   transition: padding 0.3s ease-in;
 }
+
+// Button in Page (not only and more)
+.button-color-link {
+  background-color: $color-accent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  padding: 15px 45px 15px 45px;
+  // height: 52px;
+  // width: 208px;
+  
+  .button-color {
+    font-family: $font-accent;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 125%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+  }
+}
+
+.button {
+  cursor: pointer;
+  font-family: $font-accent;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-3xl;
+  border: 2px solid $color-accent;
+  border-radius: 100px;
+  width: 187px;
+  height: 53px;
+  // padding: 13.9px 43px;
+}
+
+
+@media (hover: hover) {
+  // Buttons hover
+  .button-color-link:hover {
+    background-color: $color-primary-light;
+    transition: background-color, 0.3s ease-in;
+  }
+
+  .button-color-link:not(hover) {
+    background-color: $color-accent;
+    transition: background-color, 0.3s ease-in;
+  }
+}

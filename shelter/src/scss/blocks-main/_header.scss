@@ -92,3 +92,78 @@
   transform: translateX(-100%);
   transition: transform 0.3s ease-in;
 }
+
+
+@media (hover: hover) {
+    // Header logo hover
+  .header__logo-link:hover .header__logo-title {
+    color: $active-color-font;
+    transition: color 0.3s ease-in;
+  }
+  .header__logo-link:not(hover) .header__logo-title {
+    color: $color-accent;
+    transition: color 0.3s ease-in;
+  }
+  .header__logo-link:hover .header__logo-subtitle {
+    color: $color-accent;
+    transition: color 0.3s ease-in;
+  }
+  .header__logo-link:not(hover) .header__logo-subtitle {
+    color: $active-color-font;
+    transition: color 0.3s ease-in;
+  }
+  
+  .header__logo-link:hover .pets-title {
+      color: $color-accent;
+      transition: color 0.3s ease-in;
+  }
+  .header__logo-link:not(hover) .pets-title {
+      color: $color-dark-l;
+      transition: color 0.3s ease-in;
+  }
+  .header__logo-link:hover .pets-subtitle {
+    color: $color-accent;
+    transition: color 0.3s ease-in;
+  }
+  .header__logo-link:not(hover) .pets-subtitle {
+    color: $color-dark-l;
+    transition: color 0.3s ease-in;
+  }
+  // Header hover
+  .header__list-item {
+    .header__list-link:hover {
+      color: $active-color-font;
+      transition: color 0.3s ease-in;
+    }
+    .header__list-link:not(hover) {
+      color: $standart-color-font;
+      transition: color 0.3s ease-in;
+    }
+  }
+  
+  .header__list-item-active:hover {
+    a {
+      cursor: default;
+    }
+    cursor: default;
+  }
+
+  .header__list .header__list-item-active {
+    .header__list-link:hover {
+      cursor: default;
+    }
+  }
+
+  // Pets header
+  .header-pets__list-item {
+    .header-pets__list-link:hover {
+      color: $color-dark-3xl;
+      // color: red;
+      transition: color 0.3s ease-in;
+    }
+    .header-pets__list-link:not(hover) {
+      color: $color-dark-l;
+      transition: color 0.3s ease-in;
+    }
+  }
+}

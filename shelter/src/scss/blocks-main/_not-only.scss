@@ -2,13 +2,13 @@
   margin-top: -125.25px;
   padding-top: 185px;
   background: 
-    url("../assets/main/noise_transparent@2x.png"),
+    url("../../public/main/noise_transparent@2x.png"),
     radial-gradient(87% 215.42% at 0% 0%, #5B483A 14.5%, #262425 74.5%), #211F20;
   color: $base-color;
 }
 
 .not-only__wrapper {
-  background: url("/assets/main/start-screen-puppy.png") no-repeat right bottom;
+  background: url("../../public/main/start-screen-puppy.png") no-repeat right bottom;
   background-size: contain;
   transition: padding 0.3s ease-in;
 }

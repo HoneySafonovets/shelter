@@ -64,3 +64,18 @@
   cursor: not-allowed;
   color: $color-dark-3xl;
 }
+
+
+@media (hover: hover) {
+  // Pagination hover in PETS.html
+  .pets__pagination-item-active:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
+    transition: background 0.3s ease-in, border 0.3s ease-in;
+  }
+  .pets__pagination-item-active:not(hover) {
+    background: none;
+    border: 2px solid $color-accent;
+    transition: background 0.3s ease-in, border 0.3s ease-in;
+  }
+}

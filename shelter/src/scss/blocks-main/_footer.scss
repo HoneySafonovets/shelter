@@ -1,6 +1,6 @@
 .footer {
   background: 
-    url("../../public/main/noise_transparent@2x.png"),
+    url("/main/noise_transparent@2x.png"),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 6%, #1A1A1C 55%), #211F20;
 }
 
@@ -19,7 +19,7 @@
   gap: 160px;
   padding-top: 16px;
   padding: 56px 0px 60px 0px;
-  background: url("../../public/main/footer-puppy.png") no-repeat right bottom;
+  background: url("/public/main/footer-puppy.png") no-repeat right bottom;
   transition: padding-top 0.3s ease-in;
   min-width: 708px;
 

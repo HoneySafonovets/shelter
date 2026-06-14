@@ -39,6 +39,10 @@
   letter-spacing: 0.1em;
 }
 
+.header__menu {
+  display: flex;
+  justify-content: center;
+}
 
 .header__list {
   display: flex;

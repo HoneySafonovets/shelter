@@ -68,10 +68,11 @@
   display: block;
   width: 100%;
   height: 100%;
+  color: $standart-color-font;
 }
 
-// Active style
 
+// Active style
 .header__list-item-active {
   border-bottom: 3px solid $color-accent;
   // pointer-events: none;

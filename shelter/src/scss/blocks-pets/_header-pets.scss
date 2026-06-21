@@ -44,3 +44,46 @@
     // color: red;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .container {
+    padding: 0px 30px;
+    transition: padding 0.3s ease-in;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    transition: padding 0.3s ease-in;
+    padding: 0px 20px;
+  }
+
+  .header-pets__menu.header-pets__menu .header__nav {
+    // display: none;
+    display: flex;
+    width: 320px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -320px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: $base-color;
+    transition: transform 0.3s ease-in;
+
+    .header__list {
+      .header-pets__list-item {
+        text-align: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+
+        .header-pets__list-link {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

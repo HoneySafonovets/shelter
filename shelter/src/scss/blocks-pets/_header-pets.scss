@@ -45,20 +45,8 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .container {
-    padding: 0px 30px;
-    transition: padding 0.3s ease-in;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .container {
-    transition: padding 0.3s ease-in;
-    padding: 0px 20px;
-  }
-
-  .header-pets__menu.header-pets__menu .header__nav {
+  .header__nav {
     // display: none;
     display: flex;
     width: 320px;
@@ -85,26 +73,5 @@
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .container {
-    transition: padding 0.3s ease-in;
-    padding: 0px 15px;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .container {
-    transition: padding 0.3s ease-in;
-    padding: 0px 10px;
-  }
-}
-
-@media screen and (max-width: 319px) {
-  .container {
-    transition: padding 0.3s ease-in;
-    padding: 0px 0px;
   }
 }

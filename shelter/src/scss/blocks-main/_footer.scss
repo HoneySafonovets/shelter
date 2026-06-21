@@ -80,6 +80,29 @@
   color: $color-accent;
 }
 
+@media screen and (max-width: 1100px) {
+  .footer__info {
+    padding: 30px 34px 375px 34px;
+    background: url("/public/main/footer-puppy.png") no-repeat center bottom;
+    justify-content: space-between;
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .footer__info {
+    min-width: 0;
+  }
+
+  .footer__contacts {
+    min-width: 0;
+  }
+
+  .footer__place {
+    min-width: 0;
+  }
+}
+
 @media (hover: hover) {
   .footer__contacts-item:hover .footer__contacts-mail {
     color: $base-color;

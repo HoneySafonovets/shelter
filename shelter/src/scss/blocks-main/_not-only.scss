@@ -96,3 +96,36 @@
     padding: 0px 0px 0px 0px;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .not-only__info {
+    .not-only__title {
+      font-size: clamp(25px, 7.8vw, 44px);
+      margin-right: 0;
+      text-align: center;
+      letter-spacing: 0.06em
+    }
+
+    .not-only__text {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+
+  .not-only__wrapper {
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .not-only__wrapper {
+    padding-bottom: 569px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .not-only__wrapper {
+    padding-bottom: 377px;
+    background: url("/public/main/start-screen-puppy-320.png") no-repeat right bottom;
+  }
+}

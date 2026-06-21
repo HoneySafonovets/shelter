@@ -90,6 +90,76 @@
   }
 }
 
+@media screen and (max-width: 510px) {
+  .donation__img {
+    max-width: 260px;
+    max-height: 135.2px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .donation {
+    background-color: $color-light-l;
+    padding: 40px 0px 42px 0px;
+    transition: padding 0.3s ease-in;
+  }
+
+  .donation__info {
+    .donation__title {
+      font-size: clamp(25px, 7.8vw, 44px);
+      text-align: center;
+    }
+
+    .donation__subtitle {
+      text-align: center;
+      line-height: 160%;
+      letter-spacing: 0;
+    }
+
+    .donation__link {
+      line-height: 110%;
+      justify-content: center;
+      align-content: center;
+
+      .donation__link-number {
+        font-size: clamp(15px, 4.5vw, 20px)
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400) {
+  .donation__info .donation__link {
+    line-height: 110%;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .donation__wrapper {
+    gap: 42px;
+  }
+
+  .donation__info .donation__link {
+    max-width: 349px;
+    margin: 0px 8.1px 0px 8px;
+  }
+
+  .donation__info .donation__text {
+    padding: 0px 10px 0px 10px;
+    text-align: justify;
+  }
+
+  .donation__img {
+    // height: 261px;
+    max-width: 260px;
+    max-height: 135.2px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+
 @media (hover: hover) {
   //  Donation button :hover
   .donation__link:hover {

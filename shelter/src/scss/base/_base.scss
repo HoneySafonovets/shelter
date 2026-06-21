@@ -76,6 +76,29 @@ body {
   transition: width 0.3s ease-in;
 }
 
+// Burger menu styles
+.burger-menu {
+  display: none;
+  transition: transform 0.3s ease-in;
+  position: relative;
+  z-index: 10;
+
+  .burger-menu-item {
+    height: 2px;
+    width: 30px;
+    background-color: $color-dark-3xl;
+  }
+
+  .main-burger {
+    background-color: $color-accent;
+  }
+}
+
+.burger-menu-reverse {
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease-in;
+}
+
 @media (hover: hover) {
   // Buttons hover
   .button-color-link:hover {

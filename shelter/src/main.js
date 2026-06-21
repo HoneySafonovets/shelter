@@ -1,33 +1,17 @@
 import './scss/main.scss';
 
 console.log(`
-• Main page (70 points)
-  • Markup validation - +10
-  • Markup is valid per https://validator.w3.org/. "Document checking completed. No errors or warnings to show." - full points. Warnings (no errors) - half points +5
-  • The header logo is built from text elements, the page contains exactly one <h1>, and a favicon is added +5
-• Layout matches the design - +35
-  • <header> block +5
-  • Not only block +5
-  • About block +5
-  • Our Friends block +5
-  • Help block +5
-  • In addition block +5
-  • <footer> block +5
-• CSS requirements - +15
-  • The Help block is positioned using a grid layout (flexbox or grid) +5
-  • When zooming out or widening the browser window (>1280px), the layout stays centered - it doesn't shift to the side or stretch to full width +5
-  • The background color stretches across the full page width +5
-• Interactivity - +10
-  • The About the Shelter navigation item is highlighted and non-interactive; the other navigation items are interactive; smooth anchor scrolling works; and all page links behave per the Page links and navigation section +5
-  • Each pet card in Our Friends is interactive when hovering over any area of the card; links and buttons have hover/active styling beyond cursor: pointer (color/background change); visual changes are smooth and do not affect neighboring elements +5
-• Pets page (40 points)
-  • Markup validation - +10
-  • Markup is valid per https://validator.w3.org/ (same rules as for Main) +5
-  • he header logo is built from text elements, the page contains exactly one <h1>, and a favicon is added +5
-  • Layout matches the design - +15
-  • <header> block +5
-  • Our Friends block +5
-  • <footer> block +5
-  • CSS requirements - +5
-  • When zooming out or widening the browser window (>1280px), the layout stays centered, and the background color stretches across the full page width +5
+1.Main page (45 points)
+• Layout matches the design at 1280px +15
+• Layout matches the design at 768px +15
+• Layout matches the design at 320px +15
+2.Pets page (15 points)
+• Layout matches the design at 1280px +5
+• Layout matches the design at 768px +5
+• Layout matches the design at 320px +5
+3.Responsive behavior (50 points)
+• No horizontal scroll on either page at any width from 320px to 1280px +20
+• Layout adapts smoothly between breakpoints - no overlapping, cut-off, or visually broken content on either page +15
+• The burger icon appears instead of the navigation menu when the viewport is narrower than 768px on both pages +5 (the menu itself does not need to open at this stage)
+• Markup is valid on both pages per https://validator.w3.org/ +10
 `);

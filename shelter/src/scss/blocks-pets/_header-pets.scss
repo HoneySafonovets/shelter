@@ -87,3 +87,24 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .container {
+    transition: padding 0.3s ease-in;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    transition: padding 0.3s ease-in;
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .container {
+    transition: padding 0.3s ease-in;
+    padding: 0px 0px;
+  }
+}

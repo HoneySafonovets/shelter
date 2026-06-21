@@ -120,6 +120,42 @@
   }
 }
 
+@media screen and (max-width: 720px) {
+  .pets__slider .friends__card {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .pets__slider {
+    grid-template-columns: 1fr;
+
+    .friends__card:nth-child(4), .friends__card:nth-child(5), .friends__card:nth-child(6) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .friends__title {
+    font-size: clamp(25px, 7.8vw, 35px);
+  }
+
+  .pets__pagination {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .pets {
+    padding: 42px 0px 43.5px 0px;
+  }
+
+  .friends__title {
+    margin-bottom: 42px;
+  }
+}
+
 
 @media (hover: hover) {
   // Pagination hover in PETS.html

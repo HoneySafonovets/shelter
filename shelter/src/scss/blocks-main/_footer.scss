@@ -4,12 +4,17 @@
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 6%, #1A1A1C 55%), #211F20;
 }
 
+.footer__container {
+  background: url("/public/main/footer-puppy.png") no-repeat right bottom;
+}
+
 .footer__wrapper {
   padding: 40px 40px 59px 40px;
 
   .footer__container {
     width: 100%;
     height: 100%;
+    background: url("/public/main/footer-puppy.png") no-repeat right bottom;
   }
 }
 
@@ -18,8 +23,7 @@
   display: flex;
   gap: 160px;
   padding-top: 16px;
-  padding: 56px 0px 60px 0px;
-  background: url("/public/main/footer-puppy.png") no-repeat right bottom;
+  padding: 56px 0px 59px 0px;
   transition: padding-top 0.3s ease-in;
   min-width: 708px;
 
@@ -81,11 +85,14 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .footer__info {
-    padding: 30px 34px 375px 34px;
+  .footer__container {
     background: url("/public/main/footer-puppy.png") no-repeat center bottom;
-    justify-content: space-between;
-    gap: 0px;
+  }
+
+  .footer__info {
+    padding: 30px 24px 375px 24px;
+    // justify-content: space-between;
+    gap: 60px;
   }
 }
 

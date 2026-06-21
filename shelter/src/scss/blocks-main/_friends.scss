@@ -99,8 +99,12 @@
 }
 
 @media screen and (max-width: 1240px) {
+  .friends__wrapper-slider {
+    column-gap: 12px;
+  }
+
   .friends__slider {
-    max-width: 540px;
+    max-width: 580px;
     transition: column-gap 0.3s ease-in;
 
     .friends__card-wrapper {

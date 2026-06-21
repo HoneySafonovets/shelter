@@ -1,4 +1,4 @@
-import './scss/main.scss';
+import '../scss/main.scss';
 
 console.log(`
 1.Main page (45 points)

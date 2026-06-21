@@ -43,3 +43,56 @@
 .not-only__button {
   max-width: 208px;
 }
+
+@media screen and (max-width: 1240px) {
+  .not-only {
+    margin-top: -125.25px;
+    padding-top: 155px;
+  }
+  
+  .not-only__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 693px;
+    // background-size: 80%;
+    background: url("/public/main/start-screen-puppy-768.png") no-repeat right bottom;
+  }
+  
+  .not-only__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    max-width: 460px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .not-only {
+    margin-top: -125.25px;
+    padding-top: 155px;
+  }
+  
+  .not-only__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 693px;
+  }
+  
+  .not-only__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    max-width: 460px;
+    padding: 0px 0px 0px 0px;
+  }
+}

@@ -1,4 +1,6 @@
 import './scss/main.scss';
+import getPets from './js/getPets';
+import cardRender from './js/petsRenderFromData';
 
 console.log(`
 1.Main page (45 points)
@@ -8,10 +10,5 @@ console.log(`
 `);
 let cardsArrayJSON = [];
 
-fetch('./pets.json')
-  .then(response => response.json())
-  .then(data => {
-    cardsArrayJSON = data;
-    console.log(cardsArrayJSON);
-});
+getPets('./pets.json');
 

@@ -17,7 +17,7 @@ export default function modalWindowRender(data, cardAnimalBtn) {
                   10.2785L7.42618 6.00003Z"  />
                 </svg>
               </button>
-              <img class="modal__img" src=${e.img} alt=${e.name}>
+              <img class="modal__img" src="../.${e.img}" alt=${e.name}>
               <div class="modal__info">
                 <div class="modal__info-name">
                   <h3 class="modal__info-title">${e.name}</h3>

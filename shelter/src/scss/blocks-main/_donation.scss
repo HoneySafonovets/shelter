@@ -90,6 +90,18 @@
   }
 }
 
+@media screen and (max-width: 557px) {
+  .donation__info .donation__link {
+    line-height: 110%;
+    justify-content: center;
+    align-content: center;
+
+    .donation__link-number {
+      font-size: 15px;
+    }
+  }
+}
+
 @media screen and (max-width: 510px) {
   .donation__img {
     max-width: 260px;
@@ -121,10 +133,6 @@
       line-height: 110%;
       justify-content: center;
       align-content: center;
-
-      .donation__link-number {
-        font-size: clamp(15px, 4.5vw, 20px)
-      }
     }
   }
 }

@@ -18,6 +18,12 @@ body {
   transition: padding 0.3s ease-in;
 }
 
+a.text:active,
+a.text:hover,
+a.text {
+  text-decoration: none;
+}
+
 // Button in Page (not only and more)
 .button-color-link {
   background-color: $color-accent;

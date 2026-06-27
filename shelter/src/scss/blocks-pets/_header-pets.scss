@@ -45,8 +45,14 @@
   }
 }
 
+.header__nav-pets.header__nav-mobile-pets {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in;
+}
+
+
 @media screen and (max-width: 767px) {
-  .header__nav {
+  .header__nav-pets {
     // display: none;
     display: flex;
     width: 320px;
@@ -62,6 +68,13 @@
     transition: transform 0.3s ease-in;
 
     .header__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      gap: 40px;
+      
       .header-pets__list-item {
         text-align: center;
         // display: flex;

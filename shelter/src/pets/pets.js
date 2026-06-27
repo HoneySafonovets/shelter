@@ -1,6 +1,6 @@
 import '../scss/main.scss';
 import getsPetsFromPetsPage from './pets-js/getPetsFromPetsPage';
-import mobileNavigation from './pets-js/burgerMenu';
+import mobileNavigation from './pets-js/burgerMenuPets';
 
 mobileNavigation();
 getsPetsFromPetsPage('../../pets.json');

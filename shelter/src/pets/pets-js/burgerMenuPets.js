@@ -1,6 +1,6 @@
 export default function mobileNavigation() {
   const burgerMenu = document.querySelector('.burger-menu'),
-        navMenu = document.querySelector('.header__nav'),
+        navMenu = document.querySelector('.header__nav-pets'),
         petsBurgerMenu = document.querySelector('.pets-burger-menu'),
         shadowBody = document.querySelector('.shadow'),
         navItemMain = document.querySelectorAll('.header__list-item'),
@@ -8,7 +8,7 @@ export default function mobileNavigation() {
 
   burgerMenu.addEventListener('click', () => {
     burgerMenu.classList.toggle('burger-menu-reverse')
-    navMenu.classList.toggle('header__nav-mobile');
+    navMenu.classList.toggle('header__nav-mobile-pets');
     shadowBody.classList.toggle('shadow-show');
     document.body.classList.toggle('no-scroll');
   })
@@ -16,7 +16,7 @@ export default function mobileNavigation() {
   navItemMain.forEach(e => {
     e.addEventListener('click', () => {
       burgerMenu.classList.remove('burger-menu-reverse')
-      navMenu.classList.remove('header__nav-mobile');
+      navMenu.classList.remove('header__nav-mobile-pets');
       shadowBody.classList.remove('shadow-show');
       document.body.classList.remove('no-scroll');
     })
@@ -25,7 +25,7 @@ export default function mobileNavigation() {
   navPetsItemMain.forEach(e => {
     e.addEventListener('click', () => {
       burgerMenu.classList.remove('burger-menu-reverse')
-      navMenu.classList.remove('header__nav-mobile');
+      navMenu.classList.remove('header__nav-mobile-pets');
       shadowBody.classList.remove('shadow-show');
       document.body.classList.remove('no-scroll');
     })
@@ -39,7 +39,7 @@ export default function mobileNavigation() {
       !target.closest('.friends__card')
     ) {
       burgerMenu.classList.remove('burger-menu-reverse')
-      navMenu.classList.remove('header__nav-mobile');
+      navMenu.classList.remove('header__nav-mobile-pets');
       shadowBody.classList.remove('shadow-show');
       document.body.classList.remove('no-scroll');
     }

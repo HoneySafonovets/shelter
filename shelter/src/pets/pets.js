@@ -1,7 +1,9 @@
 import '../scss/main.scss';
+import getsPetsFromPetsPage from './pets-js/getPetsFromPetsPage';
 import mobileNavigation from './pets-js/burgerMenu';
 
 mobileNavigation();
+getsPetsFromPetsPage('../../pets.json');
 
 console.log(`
 1.Burger menu (25 points)

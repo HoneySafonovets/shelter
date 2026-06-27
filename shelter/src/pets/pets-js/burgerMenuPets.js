@@ -1,3 +1,5 @@
+import checkWindowSize from "./checkWindowSizePets";
+
 export default function mobileNavigation() {
   const burgerMenu = document.querySelector('.burger-menu'),
         navMenu = document.querySelector('.header__nav-pets'),
@@ -5,7 +7,14 @@ export default function mobileNavigation() {
         shadowBody = document.querySelector('.shadow'),
         navItemMain = document.querySelectorAll('.header__list-item'),
         navPetsItemMain = document.querySelectorAll('.header-pets__list-item');
-
+  
+  // Check size Document window for close Burger-menu
+  checkWindowSize(
+    burgerMenu,
+    navMenu,
+    shadowBody
+  );     
+  
   burgerMenu.addEventListener('click', () => {
     burgerMenu.classList.toggle('burger-menu-reverse')
     navMenu.classList.toggle('header__nav-mobile-pets');

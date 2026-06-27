@@ -1,6 +1,10 @@
 import './scss/main.scss';
 import getPets from './js/getPets';
 import cardRender from './js/petsRenderFromData';
+import mobileNavigation from './js/burgerMenu';
+
+mobileNavigation();
+getPets('./pets.json');
 
 console.log(`
 1.Burger menu (25 points)
@@ -29,5 +33,3 @@ console.log(`
 • The popup has a darkened backdrop covering the page, and closes when clicking the close button or the backdrop area outside the popup +5
 The page behind the popup does not scroll while the popup is open +5
 `);
-
-getPets('./pets.json');

@@ -6,7 +6,7 @@
     <link rel="icon" href="./assets/favicon-DCijD7xZ.ico">
     <!-- <link rel="stylesheet" href="./css/main.css"> -->
     <title>Shelter</title>
-    <script type="module" crossorigin src="./assets/main-DJ41j0qn.js"></script>
+    <script type="module" crossorigin src="./assets/main-YGpJWIPj.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/main-DoUNKQ1g.js">
     <link rel="stylesheet" crossorigin href="./styles/style.css">
   </head>
@@ -84,31 +84,19 @@
         <div class="friends__wrapper-slider">
 
           <div class="friends__slider">
-            <div class="friends__card-wrapper">
-              <article class="friends__card">
-                <img class="friends__card-img" src="./assets/pets-katrine-e6OmHicg.png" alt="Katrine">
-                <h3 class="friends__card-title">Katrine</h3>
-                <button class="button">Learn more</button>
-              </article>
-              <article class="friends__card">
-                <img class="friends__card-img" src="./assets/pets-jennifer-C3EfQeNS.png" alt="Jennifer">
-                <h3 class="friends__card-title">Jennifer</h3>
-                <button class="button">Learn more</button>
-              </article>
-              <article class="friends__card">
-                <img class="friends__card-img" src="./assets/pets-woody-BdboHJSV.png" alt="Woody">
-                <h3 class="friends__card-title">Woody</h3>
-                <button class="button">Learn more</button>
-              </article>
+            <div class="friends__card-wrapper" id="slider">
+              <div class="friends__card-wrapper-item friends__card-wrapper-left" id="left"></div>
+              <div class="friends__card-wrapper-item friends__card-wrapper-center" id="center"></div>
+              <div class="friends__card-wrapper-item friends__card-wrapper-right" id="right"></div>
             </div>
           </div>
 
-          <div class="friends__arrow friends__arrow-left">
+          <div class="friends__arrow friends__arrow-left" id="arrow-left">
             <svg class="friends__arrow-svg" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14 2V4H3V6L0 3L3 0V2H14Z"  />
             </svg>
           </div>
-          <div class="friends__arrow friends__arrow-right">
+          <div class="friends__arrow friends__arrow-right" id="arrow-right">
             <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
             </svg>
@@ -303,6 +291,8 @@
 
         </div>
       </div>
-    </footer>
+    </footer>
+
+    <div class="shadow"></div>
   </body>
 </html>

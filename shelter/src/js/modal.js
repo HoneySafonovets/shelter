@@ -40,8 +40,6 @@ export default function modalWindowRender(data, cardAnimalBtn) {
       document.body.insertAdjacentHTML('beforeend', modal)
   });
 
-  cardAnimalBtn = document.querySelectorAll('.friends__card');
-
   cardAnimalBtn.forEach(e => {
     e.addEventListener('click', () => {
       let cardId = e.getAttribute("data-name");

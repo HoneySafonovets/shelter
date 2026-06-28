@@ -1,6 +1,7 @@
 import renderRightCards from "./renderRightCards";
 import makeCenterItemCardsRight from "./makeCenterItemCardsRight";
 import makeCenterItemCardsLeft from "./makeCenterItemCardsLeft";
+import newModal from "./newModal";
 
 export default function sliderMoveMain(righSliderItem) {
   const btnLeft = document.querySelector('#arrow-left');
@@ -17,6 +18,7 @@ export default function sliderMoveMain(righSliderItem) {
     let currentSlide = document.querySelector('.friends__slider');
     
     renderRightCards('../pets.json');
+    newModal('../pets.json');
     slider.classList.add('friends__slider-move-right');
     btnLeft.removeEventListener('click', moveLeft);
     btnRight.removeEventListener('click', moveRight);

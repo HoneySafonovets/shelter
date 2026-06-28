@@ -5,5 +5,4 @@ export default function makeCenterItemCardsLeft () {
   let rightSliderElement = document.querySelector('#right');
   
   centerSliderElement.innerHTML = leftSliderElement.innerHTML;
-  // rightSliderElement.innerHTML = '';
 }

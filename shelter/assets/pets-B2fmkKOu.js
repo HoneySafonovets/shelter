@@ -65,5 +65,5 @@ import"./main-DoUNKQ1g.js";function e(e){for(let t=e.length-1;t>0;t--){let n=Mat
 4.Popup (15 points)
 • Clicking a pet card opens a popup with that pet's details from pets.json +5
 • The popup has a darkened backdrop covering the page, and closes when clicking the close button or the backdrop area outside the popup +5
-The page behind the popup does not scroll while the popup is open +5
+• The page behind the popup does not scroll while the popup is open +5
 `);

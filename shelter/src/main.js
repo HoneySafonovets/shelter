@@ -1,10 +1,13 @@
 import './scss/main.scss';
-import getPets from './js/getPets';
+import getPetsStart from './js/getPetsStart';
 import cardRender from './js/petsRenderFromData';
 import mobileNavigation from './js/burgerMenu';
+import sliderMoveMain from './js/sliderMoveMain';
+import getsPetsStart from './js/getPetsStart';
 
 mobileNavigation();
-getPets('./pets.json');
+getPetsStart('./pets.json');
+sliderMoveMain();
 
 console.log(`
 1.Burger menu (25 points)

@@ -37,18 +37,29 @@
   overflow: hidden;
   max-width: 990px;
   flex-direction: row;
-  column-gap: 90px;
+  // column-gap: 90px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   order: 1;
 
   .friends__card-wrapper {
+    position: relative;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    // overflow: hidden;
+    column-gap: 90px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in;
+  }
+
+  .friends__card-wrapper-item  {
     display: flex;
     flex-direction: row;
     column-gap: 90px;
     align-items: center;
     justify-content: space-between;
-    transition: transform 0.5s ease-in;
   }
 }
 
@@ -166,6 +177,38 @@
   }
 }
 
+
+@keyframes slideLeft {
+  from {
+    // transform: translateX(0);
+    left: 0px;
+  }
+  to {
+    // transform: translateX(-990px);
+    left: 1080px;
+  }
+}
+
+@keyframes sliderRight {
+  from {
+    // transform: translateX(0);
+    left: 0px;
+  }
+  to {
+    // transform: translateX(-990px);
+    left: -1080px;
+  }
+}
+
+.friends__slider-move-left {
+  animation: slideLeft 3s ease-in;
+}
+
+.friends__slider-move-right {
+  animation: sliderRight 3s ease-in;
+}
+
+// Media sizes
 @media screen and (max-width: 530px) {
   .friends {
     padding: 42px 0px 42px 0px;

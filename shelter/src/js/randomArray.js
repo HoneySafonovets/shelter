@@ -7,5 +7,5 @@ export default function randomArray(array) {
     array[j] = currentItem;
   }
     
-  return array
+  return array;
 }

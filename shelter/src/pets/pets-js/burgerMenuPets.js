@@ -20,7 +20,7 @@ export default function mobileNavigation() {
     navMenu.classList.toggle('header__nav-mobile-pets');
     shadowBody.classList.toggle('shadow-show');
     document.body.classList.toggle('no-scroll');
-  })
+  });
 
   navItemMain.forEach(e => {
     e.addEventListener('click', () => {
@@ -29,7 +29,7 @@ export default function mobileNavigation() {
       shadowBody.classList.remove('shadow-show');
       document.body.classList.remove('no-scroll');
     })
-  })
+  });
 
   navPetsItemMain.forEach(e => {
     e.addEventListener('click', () => {
@@ -38,8 +38,8 @@ export default function mobileNavigation() {
       shadowBody.classList.remove('shadow-show');
       document.body.classList.remove('no-scroll');
     })
-  })
-
+  });
+  
   document.addEventListener('click', (e) => {
     const target = e.target;
     if (

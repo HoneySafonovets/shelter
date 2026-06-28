@@ -38,3 +38,8 @@ console.log(`
 
 Привет! Еще постараюсь доделать работу, прошу проверить позже, ближе к концу кросс-чека, по возможности!
 `);
+
+
+document.addEventListener('click', () => {
+  console.log(event.target)
+})

@@ -46,7 +46,8 @@ export default function mobileNavigation() {
     if (
       !target.closest('.header__nav') &&
       !target.closest('.burger-menu') &&
-      !target.closest('.friends__card')
+      !target.closest('.friends__card') &&
+      !target.closest('.modal__content')
     ) {
       burgerMenu.classList.remove('burger-menu-reverse')
       navMenu.classList.remove('header__nav-mobile');

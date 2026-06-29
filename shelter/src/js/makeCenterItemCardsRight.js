@@ -1,3 +1,5 @@
+import newModal from "./newModal";
+
 export default function makeCenterItemCardsRight () {
   // Const init
   let leftSliderElement = document.querySelector('#left');
@@ -6,4 +8,5 @@ export default function makeCenterItemCardsRight () {
   
   centerSliderElement.innerHTML = rightSliderElement.innerHTML;
   // rightSliderElement.innerHTML = '';
+  newModal('../pets.json');
 }

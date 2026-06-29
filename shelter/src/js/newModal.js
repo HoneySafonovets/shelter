@@ -20,14 +20,14 @@ export default async function newModal(path) {
     dataNamesArray.push(e.dataset.name)
   });
 
-  console.log(dataNamesArray)
   // New data
   data.forEach((e) => {
-    if (`#${e.name}` !== dataNamesArray[0] && `#${e.name}` !== dataNamesArray[1] && `#${e.name}` !== dataNamesArray[2]) {
+    if (`#${e.name}` === dataNamesArray[0] || `#${e.name}` === dataNamesArray[1] || `#${e.name}` === dataNamesArray[2]) {
       newData.push(e);
     }
   })
 
-  const cardAnimalBtn = document.querySelector('#right').querySelectorAll('.friends__card')
+  // Add new modal windows to 
+  const cardAnimalBtn = document.querySelector('#center').querySelectorAll('.friends__card')
   modalWindowRender(newData, cardAnimalBtn);
 };

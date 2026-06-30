@@ -120,6 +120,11 @@
 
     .friends__card-wrapper {
       column-gap: 40px;
+
+      
+      .friends__card-wrapper-item {
+        column-gap: 40px;
+      }
     }
   }
 
@@ -128,6 +133,7 @@
   }
 }
 
+
 @media screen and (max-width: 768px) {
   .friends .friends__title-main {
     margin-bottom: 0px;
@@ -135,13 +141,32 @@
 }
 
 @media screen and (max-width: 767px) {
-  .friends__slider {
-    max-width: 270px;
-    transition: column-gap 0.3s ease-in;
+  .friends__wrapper-slider {
+    flex-direction: column;
+
+    .friends__slider {
+      order: 0;
+
+    }
+    
+
+    .friends__arrow-right {
+      order: 2;
+    }
   }
 
   .shadow {
     display: block;
+  }
+
+  .friends__arrow-left, .friends__arrow-right {
+    display: none;
+  }
+
+  .arrow-mobile {
+    display: flex;
+    margin-top: 20px;
+    gap: 80px;
   }
 }
 
@@ -151,6 +176,8 @@
 
     .friends__slider {
       order: 0;
+      max-width: 270px;
+      transition: column-gap 0.3s ease-in;
     }
 
     .friends__arrow-right {
@@ -189,6 +216,31 @@
   }
 }
 
+@keyframes slideLeft767 {
+  from {
+    // transform: translateX(0);
+    left: 0px;
+  }
+  to {
+    // transform: translateX(-990px);
+    left: 620px;
+  }
+}
+
+@keyframes slideLeft320 {
+  from {
+    // transform: translateX(0);
+    left: 0px;
+  }
+  to {
+    // transform: translateX(-990px);
+    left: 1080px;
+  }
+}
+
+
+// Move slider right 
+
 @keyframes sliderRight {
   from {
     // transform: translateX(0);
@@ -200,12 +252,51 @@
   }
 }
 
+@keyframes sliderRight767 {
+  from {
+    // transform: translateX(0);
+    left: 0px;
+  }
+  to {
+    // transform: translateX(-990px);
+    left: -620px;
+  }
+}
+
+@keyframes sliderRight320 {
+  from {
+    // transform: translateX(0);
+    left: 0px;
+  }
+  to {
+    // transform: translateX(-990px);
+    left: -580px;
+  }
+}
+
+// Classes for Moving
 .friends__slider-move-left {
   animation: slideLeft 1s ease-in;
 }
 
+.friends__slider-move-left-767 {
+  animation: slideLeft767 1s ease-in;
+}
+
+.friends__slider-move-left-320 {
+  animation: slideLeft320 1s ease-in;
+}
+
 .friends__slider-move-right {
   animation: sliderRight 1s ease-in;
+}
+
+.friends__slider-move-right-767 {
+  animation: sliderRight767 3s ease-in;
+}
+
+.friends__slider-move-right-320 {
+  animation: sliderRight320 1s ease-in;
 }
 
 // Media sizes

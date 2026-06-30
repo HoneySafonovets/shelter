@@ -205,7 +205,7 @@
 }
 
 
-@keyframes slideLeft {
+@keyframes sliderLeft {
   from {
     // transform: translateX(0);
     left: 0px;
@@ -216,7 +216,7 @@
   }
 }
 
-@keyframes slideLeft767 {
+@keyframes sliderLeft767 {
   from {
     // transform: translateX(0);
     left: 0px;
@@ -227,7 +227,7 @@
   }
 }
 
-@keyframes slideLeft320 {
+@keyframes sliderLeft320 {
   from {
     // transform: translateX(0);
     left: 0px;
@@ -276,27 +276,27 @@
 
 // Classes for Moving
 .friends__slider-move-left {
-  animation: slideLeft 1s ease-in;
+  animation: sliderLeft 0.7s ease-in;
 }
 
 .friends__slider-move-left-767 {
-  animation: slideLeft767 1s ease-in;
+  animation: sliderLeft767 0.7s ease-in;
 }
 
 .friends__slider-move-left-320 {
-  animation: slideLeft320 1s ease-in;
+  animation: sliderLeft320 0.7s ease-in;
 }
 
 .friends__slider-move-right {
-  animation: sliderRight 1s ease-in;
+  animation: sliderRight 0.7s ease-in;
 }
 
 .friends__slider-move-right-767 {
-  animation: sliderRight767 3s ease-in;
+  animation: sliderRight767 0.7s ease-in;
 }
 
 .friends__slider-move-right-320 {
-  animation: sliderRight320 1s ease-in;
+  animation: sliderRight320 0.7s ease-in;
 }
 
 // Media sizes
